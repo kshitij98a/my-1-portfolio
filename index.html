@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kshitij Agarwal | B.Tech 1st Year CSE @ JECRC University | Portfolio</title>
+  <meta name="description" content="Official portfolio of Kshitij Agarwal, B.Tech 1st Year (Semester 1) student at JECRC University. Passionate about software development, coding, and problem solving.">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       NAVIGATION BAR
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <div class="logo-badge">KA</div>
+        <div class="brand-name">Kshitij <span class="gradient-text">Agarwal</span></div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#hobbies" class="nav-link">Hobbies & Gaming</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Action Items -->
+      <div class="nav-actions">
+        <!-- Prominent Achievements Button in Nav -->
+        <a href="#achievements" class="btn-nav-achievements" title="Explore My Achievements">
+          <span>🏆</span>
+          <span>My Achievements</span>
+        </a>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <span class="moon-icon">🌙</span>
+          <span class="sun-icon">☀️</span>
+        </button>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         HERO SECTION (HOME)
+         ====================================================================== -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-grid">
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulsing-dot"></span>
+            <span>B.Tech 1st Year (1st Semester) • JECRC University</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Kshitij Agarwal</span>
+          </h1>
+
+          <div class="hero-typewriter-wrapper">
+            <span>I am a </span>
+            <span class="typewriter-text" id="typewriter">B.Tech 1st Year Student</span>
+          </div>
+
+          <p class="hero-description">
+            Welcome to my personal portfolio! I am an ambitious computer science engineering undergraduate at 
+            <strong>JECRC University, Jaipur</strong>. Passionate about software development, logical problem solving, 
+            and competitive <strong>strategy gaming 🎮</strong>.
+          </p>
+
+          <!-- Quick Highlight Pills -->
+          <div class="hero-tags-row">
+            <div class="hero-info-pill">
+              <span>🎂</span>
+              <span><strong>DOB:</strong> 17 Feb 2008</span>
+            </div>
+            <div class="hero-info-pill">
+              <span>🏫</span>
+              <span><strong>College:</strong> JECRC University</span>
+            </div>
+            <div class="hero-info-pill">
+              <span>🎮</span>
+              <span><strong>Passion:</strong> Gaming & Problem Solving</span>
+            </div>
+            <div class="hero-info-pill">
+              <span>📍</span>
+              <span>Jaipur, India</span>
+            </div>
+          </div>
+
+          <!-- Clickable Action Buttons -->
+          <div class="hero-cta-group">
+            <!-- Dedicated Achievements Button -->
+            <a href="#achievements" class="btn-gold">
+              <span>🏆</span>
+              <span>My Achievements</span>
+            </a>
+            <!-- Hobbies Link -->
+            <a href="#hobbies" class="btn-primary">
+              <span>🎮</span>
+              <span>My Hobbies & Gaming</span>
+            </a>
+            <!-- Resume Preview Button -->
+            <a href="#resume" class="btn-secondary btn-view-resume">
+              <span>📄</span>
+              <span>View Resume</span>
+            </a>
+            <!-- Contact Link -->
+            <a href="#contact" class="btn-secondary">
+              <span>📬</span>
+              <span>Let's Connect</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Profile Photo Card -->
+        <div class="hero-image-column">
+          <div class="profile-card-wrapper">
+            <!-- Floating Top-Left Status Badge -->
+            <div class="floating-stat-badge badge-top-left">
+              <span>🎓</span>
+              <span>B.Tech CSE '29</span>
+            </div>
+
+            <!-- Floating Bottom-Right Status Badge -->
+            <div class="floating-stat-badge badge-bottom-right">
+              <span>🎮</span>
+              <span>Gamer & Builder</span>
+            </div>
+
+            <div class="glass-card profile-card">
+              <div class="profile-photo-container">
+                <img src="assets/images/default-avatar.svg" alt="Kshitij Agarwal Photo" class="profile-img" id="profile-img">
+                
+                <!-- Hidden file input for photo upload -->
+                <input type="file" id="photo-file-input" accept="image/*" style="display: none;">
+                
+                <!-- Camera / Edit Icon Button to change photo -->
+                <button class="photo-change-btn" id="photo-change-trigger" title="Upload your real photo from computer">
+                  📷
+                </button>
+              </div>
+
+              <div class="profile-info">
+                <h2 class="profile-name">Kshitij Agarwal</h2>
+                <div class="profile-tagline">B.Tech 1st Year (1st Sem) • JECRC University</div>
+                
+                <div class="profile-meta-chips">
+                  <span class="meta-chip">🎂 17/02/2008</span>
+                  <span class="meta-chip">🎮 Gaming</span>
+                  <span class="meta-chip">💻 Coding</span>
+                </div>
+
+                <div class="profile-social-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+                    <span>🐙</span>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+                    <span>💼</span>
+                  </a>
+                  <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LeetCode Profile">
+                    <span>⚡</span>
+                  </a>
+                  <a href="mailto:kshitij.agarwal.jecrc@gmail.com" class="social-icon-btn" title="Email Me">
+                    <span>✉️</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ABOUT ME SECTION
+         ====================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Introduction</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-desc">
+            Get to know more about my background, university journey, and what drives my passion for technology and strategic problem solving.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story Card -->
+          <div class="glass-card about-card">
+            <h3 class="about-lead">
+              Hi! I'm Kshitij Agarwal, a passionate first-year engineering student building strong foundations in computer science.
+            </h3>
+            
+            <p class="about-paragraph">
+              I am currently enrolled in my <strong>1st Semester of B.Tech</strong> at 
+              <strong>JECRC University, Jaipur</strong>. Born on <strong>17th February 2008</strong>, my journey into technology 
+              started with a curiosity about how computer software operates and how algorithmic strategies can solve complex real-world puzzles.
+            </p>
+
+            <p class="about-paragraph">
+              Beyond standard coursework, I dedicate my hours to mastering core programming fundamentals in C/C++, exploring modern web technologies, 
+              and playing <strong>strategy & logic video games</strong>. Gaming and brain teasers have taught me rapid decision-making, resilience, 
+              and how to break down complex challenges into winning tactics — principles that directly empower my coding and problem-solving journey!
+            </p>
+
+            <!-- Detailed Grid -->
+            <div class="about-details-grid">
+              <div class="detail-item">
+                <div class="detail-icon">👤</div>
+                <div>
+                  <div class="detail-label">Full Name</div>
+                  <div class="detail-value">Kshitij Agarwal</div>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon">🎂</div>
+                <div>
+                  <div class="detail-label">Date of Birth</div>
+                  <div class="detail-value">17 / 02 / 2008</div>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon">🏫</div>
+                <div>
+                  <div class="detail-label">University</div>
+                  <div class="detail-value">JECRC University</div>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon">🎓</div>
+                <div>
+                  <div class="detail-label">Current Stage</div>
+                  <div class="detail-value">B.Tech 1st Year (Sem 1)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Spotlight Card -->
+          <div class="glass-card about-card academic-spotlight">
+            <div>
+              <div class="uni-badge-header">
+                <div class="uni-logo-box">🏛️</div>
+                <div>
+                  <div class="uni-name">JECRC University, Jaipur</div>
+                  <div class="uni-subtext">School of Engineering & Technology</div>
+                </div>
+              </div>
+
+              <h4 style="margin-bottom: 1rem; font-size: 1.1rem;">Undergraduate Roadmap & Milestones</h4>
+              
+              <div class="journey-milestones">
+                <div class="milestone-item">
+                  <div class="milestone-title">Semester 1 (Current)</div>
+                  <div class="milestone-desc">
+                    Mastering Programming for Problem Solving (C/C++), Discrete Mathematics, Engineering Physics, and Web Dev basics.
+                  </div>
+                </div>
+
+                <div class="milestone-item">
+                  <div class="milestone-title">Algorithmic Mindset</div>
+                  <div class="milestone-desc">
+                    Practicing logic building, time complexity fundamentals, and data structure implementations.
+                  </div>
+                </div>
+
+                <div class="milestone-item">
+                  <div class="milestone-title">Project Innovations</div>
+                  <div class="milestone-desc">
+                    Developing modern responsive web applications and participating in campus technical clubs.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Button in About -->
+            <div style="margin-top: 1.75rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <a href="#achievements" class="btn-gold" style="padding: 0.65rem 1.25rem; font-size: 0.92rem;">
+                <span>🏆</span>
+                <span>Check My Achievements</span>
+              </a>
+              <a href="#skills" class="btn-secondary" style="padding: 0.65rem 1.25rem; font-size: 0.92rem;">
+                <span>⚡</span>
+                <span>Explore Skills</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SKILLS SECTION
+         ====================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">Technical & Soft <span class="gradient-text">Skills</span></h2>
+          <p class="section-desc">
+            Foundational programming languages, developer tools, and analytical capabilities I am honing during my 1st Year B.Tech program.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="glass-card skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">💻</div>
+              <h3 class="category-title">Programming</h3>
+            </div>
+            
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><span>⚡</span> C Programming</span>
+                  <span class="skill-level-text">85%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><span>🚀</span> C++ (OOP & STL)</span>
+                  <span class="skill-level-text">80%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><span>🐍</span> Python (Basics)</span>
+                  <span class="skill-level-text">70%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><span>📜</span> JavaScript (ES6+)</span>
+                  <span class="skill-level-text">65%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 65%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="glass-card skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">🌐</div>
+              <h3 class="category-title">Web Development</h3>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><span>🟧</span> HTML5 & Semantic Web</span>
+                  <span class="skill-level-text">90%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><span>🎨</span> CSS3, Flexbox & Grid</span>
+                  <span class="skill-level-text">85%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><span>📱</span> Responsive Design</span>
+                  <span class="skill-level-text">85%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name"><span>✨</span> Glassmorphism & UI</span>
+                  <span class="skill-level-text">80%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer Tools & Mindset -->
+          <div class="glass-card skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">🛠️</div>
+              <h3 class="category-title">Tools & Soft Skills</h3>
+            </div>
+
+            <div class="chips-cloud" style="margin-bottom: 1.5rem;">
+              <span class="skill-tag">🐙 Git & GitHub</span>
+              <span class="skill-tag">📝 VS Code</span>
+              <span class="skill-tag">⌨️ Windows CLI</span>
+              <span class="skill-tag">🧩 Logic Building</span>
+              <span class="skill-tag">🎯 Strategic Planning</span>
+              <span class="skill-tag">🤝 Team Collaboration</span>
+              <span class="skill-tag">⏱️ Time Management</span>
+              <span class="skill-tag">🔍 Debugging</span>
+            </div>
+
+            <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+              <div style="font-weight: 700; font-size: 0.9rem; margin-bottom: 0.25rem; color: var(--accent-cyan);">
+                💡 Engineering Philosophy:
+              </div>
+              <p style="font-size: 0.82rem; color: var(--text-secondary);">
+                "Writing clean, scalable code is like mastering a strategic game — precise logic, patience, and clear foresight create winning solutions."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         HOBBIES & GAMING SECTION
+         ====================================================================== -->
+    <section class="section" id="hobbies">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Passions & Leisure</span>
+          <h2 class="section-title">My Hobbies & <span class="gradient-text">Gaming</span> 🎮</h2>
+          <p class="section-desc">
+            Games and creative pursuits sharpen the intellect. Discover how my passion for gaming, logic puzzles, and tech exploration fuels my engineering mindset.
+          </p>
+        </div>
+
+        <div class="hobbies-cards-grid">
+          <!-- Card 1: Strategy Video Games -->
+          <div class="glass-card hobby-featured-card">
+            <div class="hobby-card-top">
+              <div class="hobby-icon-box">🎮</div>
+              <span class="hobby-tag">Primary Passion</span>
+            </div>
+            <h3 class="hobby-title">Strategy & Logic Video Games</h3>
+            <p class="hobby-text">
+              Engaging in tactical real-time strategy, competitive multiplayer, and puzzle games. Gaming hones split-second decision making, resource management, and team communication under pressure.
+            </p>
+            <div class="hobby-badges-row">
+              <span>⚡ Fast Reflexes</span>
+              <span>🛡️ Resource Tactics</span>
+              <span>🤝 Team Play</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Logic Puzzles & Brain Teasers -->
+          <div class="glass-card hobby-featured-card">
+            <div class="hobby-card-top">
+              <div class="hobby-icon-box">🧩</div>
+              <span class="hobby-tag">Analytical</span>
+            </div>
+            <h3 class="hobby-title">Logic Puzzles & Brain Teasers</h3>
+            <p class="hobby-text">
+              Solving numerical brain teasers, Sudoku, pattern matching riddles, and algorithmic challenges that keep the analytical mind razor-sharp.
+            </p>
+            <div class="hobby-badges-row">
+              <span>🔍 Deductive Logic</span>
+              <span>🔢 Number Puzzles</span>
+              <span>🧠 Mental Agility</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Exploring Tech & AI -->
+          <div class="glass-card hobby-featured-card">
+            <div class="hobby-card-top">
+              <div class="hobby-icon-box">🤖</div>
+              <span class="hobby-tag">Technology</span>
+            </div>
+            <h3 class="hobby-title">Exploring Tech, AI & Hardware</h3>
+            <p class="hobby-text">
+              Tracking the latest breakthroughs in artificial intelligence, computer architecture, open-source software, and next-gen developer tools.
+            </p>
+            <div class="hobby-badges-row">
+              <span>🚀 GenAI Trends</span>
+              <span>💻 PC Architecture</span>
+              <span>🌐 Open Source</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Coding Challenges -->
+          <div class="glass-card hobby-featured-card">
+            <div class="hobby-card-top">
+              <div class="hobby-icon-box">💻</div>
+              <span class="hobby-tag">Coding</span>
+            </div>
+            <h3 class="hobby-title">Competitive Coding & Practice</h3>
+            <p class="hobby-text">
+              Experimenting with algorithms, optimizing time complexities, and solving data structures challenges to level up programming fluency.
+            </p>
+            <div class="hobby-badges-row">
+              <span>⚙️ Data Structures</span>
+              <span>⏱️ Time Complexity</span>
+              <span>💡 Algorithmic Thinking</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Music & Deep Work -->
+          <div class="glass-card hobby-featured-card">
+            <div class="hobby-card-top">
+              <div class="hobby-icon-box">🎧</div>
+              <span class="hobby-tag">Focus</span>
+            </div>
+            <h3 class="hobby-title">Music & Deep Work Focus</h3>
+            <p class="hobby-text">
+              Listening to instrumental tracks, synthwave, and lo-fi beats while diving deep into code architectures, writing documentation, and studying.
+            </p>
+            <div class="hobby-badges-row">
+              <span>🎵 Lo-Fi Beats</span>
+              <span>🧘 Flow State</span>
+              <span>🎧 Focus Sessions</span>
+            </div>
+          </div>
+
+          <!-- Card 6: Building Web Experiments -->
+          <div class="glass-card hobby-featured-card">
+            <div class="hobby-card-top">
+              <div class="hobby-icon-box">✨</div>
+              <span class="hobby-tag">Creative</span>
+            </div>
+            <h3 class="hobby-title">Building Creative Web Apps</h3>
+            <p class="hobby-text">
+              Crafting modern interactive web interfaces, experimenting with neon glassmorphism styles, and building projects for campus peers.
+            </p>
+            <div class="hobby-badges-row">
+              <span>🎨 UI/UX Design</span>
+              <span>⚡ Modern Web</span>
+              <span>🛠️ Side Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ACHIEVEMENTS SECTION (HIGHLIGHTED AS REQUESTED)
+         ====================================================================== -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="background: rgba(245, 158, 11, 0.12); color: #fbbf24; border-color: rgba(245, 158, 11, 0.3);">
+            Recognitions & Milestones
+          </span>
+          <h2 class="section-title">My <span class="gold-gradient-text">Achievements</span> 🏆</h2>
+          <p class="section-desc">
+            A showcase of my academic milestones at JECRC University, gaming competitions, and technical certifications.
+          </p>
+        </div>
+
+        <!-- Controls: Category Filter Tabs & Add Achievement Trigger -->
+        <div class="achievements-controls">
+          <div class="filter-tabs-group">
+            <button class="filter-tab-btn active" data-filter="all">All Highlights (6)</button>
+            <button class="filter-tab-btn" data-filter="academic">🎓 Academic</button>
+            <button class="filter-tab-btn" data-filter="gaming">🎮 Gaming & Competitions</button>
+            <button class="filter-tab-btn" data-filter="tech">💻 Coding & Tech</button>
+          </div>
+
+          <!-- Add Achievement Button for Kshitij to add future achievements -->
+          <button class="btn-add-achievement" id="btn-open-add-achievement">
+            <span>➕</span>
+            <span>Add New Achievement</span>
+          </button>
+        </div>
+
+        <!-- Achievements Grid rendered dynamically via JS -->
+        <div class="achievements-grid" id="achievements-grid">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CONTACT SECTION
+         ====================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span> 📬</h2>
+          <p class="section-desc">
+            Have an opportunity, college project collaboration, or want to discuss technology & gaming? Feel free to reach out!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Info Panel -->
+          <div class="glass-card contact-info-panel">
+            <div>
+              <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem;">
+                Contact Kshitij Agarwal
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                I am always eager to connect with fellow students, developers, mentors, and tech enthusiasts.
+              </p>
+
+              <div class="contact-direct-cards">
+                <!-- Email Channel -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">✉️</div>
+                    <div>
+                      <div class="channel-label">Email Address</div>
+                      <div class="channel-value">kshitij.agarwal.jecrc@gmail.com</div>
+                    </div>
+                  </div>
+                  <button class="copy-btn btn-copy-text" data-copy="kshitij.agarwal.jecrc@gmail.com" title="Copy Email">
+                    Copy
+                  </button>
+                </div>
+
+                <!-- University Location -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">🏛️</div>
+                    <div>
+                      <div class="channel-label">University Campus</div>
+                      <div class="channel-value">JECRC University, Jaipur (Raj.)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Date of Birth & Personal Reference -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">🎂</div>
+                    <div>
+                      <div class="channel-label">Birth Date</div>
+                      <div class="channel-value">17th February 2008</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links in Contact -->
+            <div>
+              <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem; text-transform: uppercase; font-weight: 600;">
+                Find Me On The Web
+              </div>
+              <div style="display: flex; gap: 0.75rem;">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+                  <span>🐙</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+                  <span>💼</span>
+                </a>
+                <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LeetCode">
+                  <span>⚡</span>
+                </a>
+                <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Discord">
+                  <span>💬</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Interactive Contact Form -->
+          <div class="glass-card contact-form-card">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="e.g. rahul@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Your Message</label>
+                <textarea id="contact-message" class="form-control" placeholder="Write your message here... Let's collaborate or connect!" required></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-message">
+                <span>🚀</span>
+                <span>Send Message to Kshitij</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-badge">KA</div>
+            <div class="brand-name">Kshitij Agarwal</div>
+          </div>
+          <p class="footer-tagline">
+            B.Tech 1st Year (Semester 1) Student @ JECRC University • Problem Solver & Aspiring Engineer.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#hobbies">Hobbies & Gaming</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Kshitij Agarwal. Built with passion, modern web standards, and tactical precision.
+        </div>
+        <a href="#home" class="back-to-top-btn">
+          <span>Back to top</span>
+          <span>↑</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL 1: RESUME / CV PREVIEW MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title">
+          <span>📄</span>
+          <span>Resume Preview - Kshitij Agarwal</span>
+        </div>
+        <button class="modal-close-btn" id="btn-close-resume-modal" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="resume-sheet">
+          <div class="resume-header">
+            <h2 class="resume-name">KSHITIJ AGARWAL</h2>
+            <div class="resume-contact-line">
+              <span>🎂 DOB: 17/02/2008</span>
+              <span>📍 Jaipur, India</span>
+              <span>✉️ kshitij.agarwal.jecrc@gmail.com</span>
+            </div>
+            <div style="margin-top: 0.35rem; font-weight: 600; color: #0284c7; font-size: 0.9rem;">
+              B.Tech Computer Science Engineering • 1st Year (Semester 1) • JECRC University
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="resume-section-title">Education</div>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <span>JECRC University, Jaipur</span>
+              <span>2026 - 2030</span>
+            </div>
+            <div class="resume-item-sub">
+              <span>Bachelor of Technology (B.Tech) in Computer Science & Engineering</span>
+              <span>Semester 1</span>
+            </div>
+            <ul class="resume-bullet-list">
+              <li>Coursework: Programming for Problem Solving (C/C++), Calculus, Discrete Structures.</li>
+              <li>Active member of university technical innovation and coding clubs.</li>
+            </ul>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="resume-section-title">Technical Skills</div>
+          <div style="font-size: 0.88rem; color: #334155; line-height: 1.6;">
+            <strong>Languages:</strong> C, C++, Python (Foundations), JavaScript<br>
+            <strong>Web Tech:</strong> HTML5, CSS3, Flexbox/Grid, Responsive Web Design<br>
+            <strong>Developer Tools:</strong> Git, GitHub, VS Code, Command Line Interface<br>
+            <strong>Core Strengths:</strong> Tactical Planning, Algorithmic Thinking, Analytical Reasoning
+          </div>
+
+          <!-- Achievements -->
+          <div class="resume-section-title">Selected Achievements & Honors</div>
+          <ul class="resume-bullet-list">
+            <li>Secured admission in B.Tech CSE at JECRC University based on academic merit.</li>
+            <li>Finalist in Campus Logic & Gaming Tournament.</li>
+            <li>High school board academic distinction in Mathematics & Computer Applications.</li>
+            <li>Developed and published full-featured personal portfolio website with interactive modules.</li>
+          </ul>
+
+          <!-- Hobbies -->
+          <div class="resume-section-title">Interests & Hobbies</div>
+          <div style="font-size: 0.88rem; color: #334155;">
+            Competitive Strategy Gaming, Logic Puzzles & Sudoku, Exploring Tech Breakthroughs & AI.
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 1.5rem;">
+          <button class="btn-primary" id="btn-print-resume">
+            <span>🖨️</span>
+            <span>Print / Save as PDF</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 2: ADD NEW ACHIEVEMENT MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="add-achievement-modal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title">
+          <span>➕</span>
+          <span>Add New Achievement</span>
+        </div>
+        <button class="modal-close-btn" id="btn-close-add-modal" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <form id="add-achievement-form">
+          <div class="form-group">
+            <label for="new-achieve-title" class="form-label">Achievement Title *</label>
+            <input type="text" id="new-achieve-title" class="form-control" placeholder="e.g. 1st Place in College Hackathon" required>
+          </div>
+
+          <div class="form-group">
+            <label for="new-achieve-category" class="form-label">Category *</label>
+            <select id="new-achieve-category" class="form-control" style="background: var(--bg-tertiary); color: var(--text-primary);" required>
+              <option value="academic">🎓 Academic Milestone</option>
+              <option value="gaming">🎮 Gaming & Competitions</option>
+              <option value="tech">💻 Coding & Tech</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="new-achieve-date" class="form-label">Date or Year</label>
+            <input type="text" id="new-achieve-date" class="form-control" placeholder="e.g. October 2026">
+          </div>
+
+          <div class="form-group">
+            <label for="new-achieve-org" class="form-label">Organization / Event</label>
+            <input type="text" id="new-achieve-org" class="form-control" placeholder="e.g. JECRC University">
+          </div>
+
+          <div class="form-group">
+            <label for="new-achieve-desc" class="form-label">Description *</label>
+            <textarea id="new-achieve-desc" class="form-control" placeholder="Describe your accomplishment..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="new-achieve-tags" class="form-label">Tags (comma separated)</label>
+            <input type="text" id="new-achieve-tags" class="form-control" placeholder="e.g. Hackathon, Coding, JECRC">
+          </div>
+
+          <button type="submit" class="btn-gold" style="width: 100%; justify-content: center;">
+            <span>💾</span>
+            <span>Save Achievement to Portfolio</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
