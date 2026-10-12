@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kshitij Agarwal | B.Tech 1st Year CSE @ JECRC University | Portfolio</title>
-  <meta name="description" content="Official portfolio of Kshitij Agarwal, B.Tech 1st Year (Semester 1) student at JECRC University. Passionate about software development, coding, and problem solving.">
-
-  <!-- Google Fonts: Inter & JetBrains Mono -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Kshitij Agarwal - 1st Year B.Tech CSE Student. Beginning my programming and web development journey." />
+  <title>Kshitij Agarwal | 1st Year B.Tech Student Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ========================================================================
-       NAVIGATION BAR
-       ======================================================================== -->
+  <!-- Navigation Bar -->
   <header class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#home" class="brand-logo">
-        <div class="logo-badge">KA</div>
-        <div class="brand-name">Kshitij <span class="gradient-text">Agarwal</span></div>
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-code">&lt;</span>Kshitij<span class="logo-accent">.Agarwal</span><span class="logo-code">/&gt;</span>
       </a>
 
       <!-- Desktop Navigation Menu -->
       <nav class="nav-menu" id="nav-menu">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About Me</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#hobbies" class="nav-link">Hobbies & Gaming</a>
-        <a href="#achievements" class="nav-link">Achievements</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">What I'm Learning</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">10 Starter Projects</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Milestones & Goals</a></li>
+          <li class="nav-item"><a href="#hobbies" class="nav-link">Hobbies</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
       </nav>
 
-      <!-- Nav Action Items -->
+      <!-- Right Nav Controls (Theme Toggle & Direct Quick Buttons) -->
       <div class="nav-actions">
-        <!-- Prominent Achievements Button in Nav -->
-        <a href="#achievements" class="btn-nav-achievements" title="Explore My Achievements">
-          <span>🏆</span>
-          <span>My Achievements</span>
-        </a>
-
-        <!-- Dark / Light Theme Toggle -->
-        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
-          <span class="moon-icon">🌙</span>
-          <span class="sun-icon">☀️</span>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme" title="Toggle Light/Dark Mode">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
         </button>
-
-        <!-- Mobile Hamburger Menu Button -->
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <a href="#achievements" class="btn btn-sm btn-gold nav-achieve-btn">
+          <i class="fa-solid fa-bullseye"></i> My Milestones
+        </a>
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Say Hello</a>
+        <button class="hamburger" id="hamburger" aria-label="Open mobile menu">
           <span></span>
           <span></span>
           <span></span>
@@ -60,130 +59,120 @@
     </div>
   </header>
 
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <span class="logo-text">&lt;Kshitij.Agarwal/&gt;</span>
+      <button class="close-drawer" id="close-drawer" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="drawer-list">
+      <li><a href="#home" class="drawer-link">Home</a></li>
+      <li><a href="#about" class="drawer-link">About Me</a></li>
+      <li><a href="#education" class="drawer-link">Education</a></li>
+      <li><a href="#skills" class="drawer-link">What I'm Learning</a></li>
+      <li><a href="#projects" class="drawer-link">10 Starter Projects</a></li>
+      <li><a href="#achievements" class="drawer-link">My Milestones & Goals</a></li>
+      <li><a href="#hobbies" class="drawer-link">My Hobbies</a></li>
+      <li><a href="#contact" class="drawer-link">Contact Me</a></li>
+    </ul>
+    <div class="drawer-socials">
+      <a href="https://github.com/kshitij-agarwal" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/kshitij-agarwal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:kshitij.agarwal.student@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
   <main>
-    <!-- ======================================================================
-         HERO SECTION (HOME)
-         ====================================================================== -->
-    <section class="section hero-section" id="home">
-      <div class="container hero-grid">
-        <!-- Left Hero Content -->
+    <!-- HERO / HOME SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
         <div class="hero-content">
-          <div class="hero-badge">
-            <span class="pulsing-dot"></span>
-            <span>B.Tech 1st Year (1st Semester) • JECRC University</span>
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>Just Entered College • 1st Year B.Tech CSE Undergrad</span>
           </div>
-
           <h1 class="hero-title">
-            Hi, I'm <span class="gradient-text">Kshitij Agarwal</span>
+            Hi, I'm <br />
+            <span class="gradient-text">Kshitij Agarwal</span>
           </h1>
-
-          <div class="hero-typewriter-wrapper">
-            <span>I am a </span>
-            <span class="typewriter-text" id="typewriter">B.Tech 1st Year Student</span>
-          </div>
-
-          <p class="hero-description">
-            Welcome to my personal portfolio! I am an ambitious computer science engineering undergraduate at 
-            <strong>JECRC University, Jaipur</strong>. Passionate about software development, logical problem solving, 
-            and competitive <strong>strategy gaming 🎮</strong>.
+          <h2 class="hero-subtitle">
+            I am <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-desc">
+            Welcome to my website! I have just stepped into college to pursue my B.Tech in Computer Science & Engineering. I am at the beginning of my tech journey — learning C programming, building my first web pages, exploring computers, and excited about what lies ahead.
           </p>
 
-          <!-- Quick Highlight Pills -->
-          <div class="hero-tags-row">
-            <div class="hero-info-pill">
-              <span>🎂</span>
-              <span><strong>DOB:</strong> 17 Feb 2008</span>
-            </div>
-            <div class="hero-info-pill">
-              <span>🏫</span>
-              <span><strong>College:</strong> JECRC University</span>
-            </div>
-            <div class="hero-info-pill">
-              <span>🎮</span>
-              <span><strong>Passion:</strong> Gaming & Problem Solving</span>
-            </div>
-            <div class="hero-info-pill">
-              <span>📍</span>
-              <span>Jaipur, India</span>
-            </div>
+          <!-- Clickable Action Buttons for All Main Sections -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-laptop-code"></i> View 10 Starter Projects
+            </a>
+            <a href="#achievements" class="btn btn-gold">
+              <i class="fa-solid fa-bullseye"></i> My Milestones & Goals
+            </a>
+            <a href="#hobbies" class="btn btn-secondary">
+              <i class="fa-solid fa-gamepad"></i> My Hobbies
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
           </div>
 
-          <!-- Clickable Action Buttons -->
-          <div class="hero-cta-group">
-            <!-- Dedicated Achievements Button -->
-            <a href="#achievements" class="btn-gold">
-              <span>🏆</span>
-              <span>My Achievements</span>
-            </a>
-            <!-- Hobbies Link -->
-            <a href="#hobbies" class="btn-primary">
-              <span>🎮</span>
-              <span>My Hobbies & Gaming</span>
-            </a>
-            <!-- Resume Preview Button -->
-            <a href="#resume" class="btn-secondary btn-view-resume">
-              <span>📄</span>
-              <span>View Resume</span>
-            </a>
-            <!-- Contact Link -->
-            <a href="#contact" class="btn-secondary">
-              <span>📬</span>
-              <span>Let's Connect</span>
-            </a>
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <span class="social-label">My Profiles:</span>
+            <div class="social-links">
+              <a href="https://github.com/kshitij-agarwal" target="_blank" rel="noopener noreferrer" class="social-bubble" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+                <span class="tooltip">GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/kshitij-agarwal" target="_blank" rel="noopener noreferrer" class="social-bubble" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span class="tooltip">LinkedIn</span>
+              </a>
+              <a href="mailto:kshitij.agarwal.student@example.com" class="social-bubble" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="tooltip">Email</span>
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Right Hero Profile Photo Card -->
-        <div class="hero-image-column">
-          <div class="profile-card-wrapper">
-            <!-- Floating Top-Left Status Badge -->
-            <div class="floating-stat-badge badge-top-left">
-              <span>🎓</span>
-              <span>B.Tech CSE '29</span>
-            </div>
-
-            <!-- Floating Bottom-Right Status Badge -->
-            <div class="floating-stat-badge badge-bottom-right">
-              <span>🎮</span>
-              <span>Gamer & Builder</span>
-            </div>
-
-            <div class="glass-card profile-card">
-              <div class="profile-photo-container">
-                <img src="assets/images/default-avatar.svg" alt="Kshitij Agarwal Photo" class="profile-img" id="profile-img">
-                
-                <!-- Hidden file input for photo upload -->
-                <input type="file" id="photo-file-input" accept="image/*" style="display: none;">
-                
-                <!-- Camera / Edit Icon Button to change photo -->
-                <button class="photo-change-btn" id="photo-change-trigger" title="Upload your real photo from computer">
-                  📷
-                </button>
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-glow"></div>
+            <div class="avatar-card">
+              <div class="card-inner">
+                <div class="avatar-image-container">
+                  <div class="avatar-placeholder">
+                    <i class="fa-solid fa-user-graduate"></i>
+                  </div>
+                </div>
+                <div class="avatar-info">
+                  <h3>Kshitij Agarwal</h3>
+                  <p>1st Year B.Tech Student (Batch 2025–2029)</p>
+                  <div class="tags-row">
+                    <span class="mini-tag">C Language</span>
+                    <span class="mini-tag">HTML & CSS</span>
+                    <span class="mini-tag">Curious Learner</span>
+                  </div>
+                </div>
               </div>
 
-              <div class="profile-info">
-                <h2 class="profile-name">Kshitij Agarwal</h2>
-                <div class="profile-tagline">B.Tech 1st Year (1st Sem) • JECRC University</div>
-                
-                <div class="profile-meta-chips">
-                  <span class="meta-chip">🎂 17/02/2008</span>
-                  <span class="meta-chip">🎮 Gaming</span>
-                  <span class="meta-chip">💻 Coding</span>
+              <!-- Floating quick stats badges -->
+              <div class="floating-badge badge-top-right">
+                <i class="fa-solid fa-seedling"></i>
+                <div>
+                  <strong>College Fresher</strong>
+                  <small>Beginning My Journey</small>
                 </div>
-
-                <div class="profile-social-links">
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
-                    <span>🐙</span>
-                  </a>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
-                    <span>💼</span>
-                  </a>
-                  <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LeetCode Profile">
-                    <span>⚡</span>
-                  </a>
-                  <a href="mailto:kshitij.agarwal.jecrc@gmail.com" class="social-icon-btn" title="Email Me">
-                    <span>✉️</span>
-                  </a>
+              </div>
+              <div class="floating-badge badge-bottom-left">
+                <i class="fa-solid fa-code"></i>
+                <div>
+                  <strong>10 Starter Labs</strong>
+                  <small>Learning by Doing</small>
                 </div>
               </div>
             </div>
@@ -192,536 +181,958 @@
       </div>
     </section>
 
-    <!-- ======================================================================
-         ABOUT ME SECTION
-         ====================================================================== -->
-    <section class="section" id="about">
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Introduction</span>
-          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-          <p class="section-desc">
-            Get to know more about my background, university journey, and what drives my passion for technology and strategic problem solving.
-          </p>
+          <span class="section-tag">01. About Me</span>
+          <h2 class="section-title">My Story So Far</h2>
+          <p class="section-subtitle">An honest introduction to who I am as a newly joined engineering student</p>
         </div>
 
         <div class="about-grid">
-          <!-- Story Card -->
-          <div class="glass-card about-card">
-            <h3 class="about-lead">
-              Hi! I'm Kshitij Agarwal, a passionate first-year engineering student building strong foundations in computer science.
-            </h3>
-            
-            <p class="about-paragraph">
-              I am currently enrolled in my <strong>1st Semester of B.Tech</strong> at 
-              <strong>JECRC University, Jaipur</strong>. Born on <strong>17th February 2008</strong>, my journey into technology 
-              started with a curiosity about how computer software operates and how algorithmic strategies can solve complex real-world puzzles.
+          <div class="about-text-col">
+            <p class="about-lead">
+              Hello! My name is <strong>Kshitij Agarwal</strong>. I have just joined college as a first-year student pursuing a <strong>Bachelor of Technology (B.Tech) in Computer Science & Engineering</strong>.
+            </p>
+            <p>
+              I am at the very start of my engineering education. I haven't worked on massive industrial projects or won big competitions yet — and that is completely okay! My current focus is showing up every day, understanding how computers work from the ground up, practicing logic, and writing simple, clean programs in C and basic web code.
+            </p>
+            <p>
+              To learn programming by doing, I have been building <strong>10 beginner-friendly starter projects and lab programs</strong> — from writing a simple arithmetic calculator and number guessing game to designing this very portfolio website. I am genuinely eager to learn, make mistakes, improve my skills, and explore different fields of technology over the next four years.
             </p>
 
-            <p class="about-paragraph">
-              Beyond standard coursework, I dedicate my hours to mastering core programming fundamentals in C/C++, exploring modern web technologies, 
-              and playing <strong>strategy & logic video games</strong>. Gaming and brain teasers have taught me rapid decision-making, resilience, 
-              and how to break down complex challenges into winning tactics — principles that directly empower my coding and problem-solving journey!
-            </p>
-
-            <!-- Detailed Grid -->
-            <div class="about-details-grid">
-              <div class="detail-item">
-                <div class="detail-icon">👤</div>
+            <div class="personal-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-user-check"></i>
                 <div>
-                  <div class="detail-label">Full Name</div>
-                  <div class="detail-value">Kshitij Agarwal</div>
+                  <h4>Status</h4>
+                  <p>Newly Joined 1st Year Undergrad</p>
                 </div>
               </div>
-
-              <div class="detail-item">
-                <div class="detail-icon">🎂</div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-graduation-cap"></i>
                 <div>
-                  <div class="detail-label">Date of Birth</div>
-                  <div class="detail-value">17 / 02 / 2008</div>
+                  <h4>Degree</h4>
+                  <p>B.Tech Computer Science (CSE)</p>
                 </div>
               </div>
-
-              <div class="detail-item">
-                <div class="detail-icon">🏫</div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-compass"></i>
                 <div>
-                  <div class="detail-label">University</div>
-                  <div class="detail-value">JECRC University</div>
+                  <h4>Current Focus</h4>
+                  <p>C Language, Web Basics, Problem Solving</p>
                 </div>
               </div>
-
-              <div class="detail-item">
-                <div class="detail-icon">🎓</div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-heart"></i>
                 <div>
-                  <div class="detail-label">Current Stage</div>
-                  <div class="detail-value">B.Tech 1st Year (Sem 1)</div>
+                  <h4>Motivation</h4>
+                  <p>Curiosity & Passion for Technology</p>
                 </div>
               </div>
+            </div>
+
+            <!-- Quick Navigation to Projects & Hobbies -->
+            <div class="about-buttons-row">
+              <a href="#projects" class="btn btn-sm btn-primary">
+                <i class="fa-solid fa-code"></i> View My 10 Starter Projects
+              </a>
+              <a href="#hobbies" class="btn btn-sm btn-secondary">
+                <i class="fa-solid fa-gamepad"></i> Check Out My Hobbies
+              </a>
             </div>
           </div>
 
-          <!-- Academic Spotlight Card -->
-          <div class="glass-card about-card academic-spotlight">
-            <div>
-              <div class="uni-badge-header">
-                <div class="uni-logo-box">🏛️</div>
-                <div>
-                  <div class="uni-name">JECRC University, Jaipur</div>
-                  <div class="uni-subtext">School of Engineering & Technology</div>
-                </div>
-              </div>
-
-              <h4 style="margin-bottom: 1rem; font-size: 1.1rem;">Undergraduate Roadmap & Milestones</h4>
-              
-              <div class="journey-milestones">
-                <div class="milestone-item">
-                  <div class="milestone-title">Semester 1 (Current)</div>
-                  <div class="milestone-desc">
-                    Mastering Programming for Problem Solving (C/C++), Discrete Mathematics, Engineering Physics, and Web Dev basics.
-                  </div>
-                </div>
-
-                <div class="milestone-item">
-                  <div class="milestone-title">Algorithmic Mindset</div>
-                  <div class="milestone-desc">
-                    Practicing logic building, time complexity fundamentals, and data structure implementations.
-                  </div>
-                </div>
-
-                <div class="milestone-item">
-                  <div class="milestone-title">Project Innovations</div>
-                  <div class="milestone-desc">
-                    Developing modern responsive web applications and participating in campus technical clubs.
-                  </div>
-                </div>
-              </div>
+          <div class="about-cards-col">
+            <div class="glass-card stat-box">
+              <div class="stat-icon"><i class="fa-solid fa-book-open"></i></div>
+              <h3>Learning Mindset</h3>
+              <p>Understanding concepts step-by-step rather than memorizing: practicing loops, variables, and logic daily.</p>
             </div>
-
-            <!-- Bottom Button in About -->
-            <div style="margin-top: 1.75rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
-              <a href="#achievements" class="btn-gold" style="padding: 0.65rem 1.25rem; font-size: 0.92rem;">
-                <span>🏆</span>
-                <span>Check My Achievements</span>
-              </a>
-              <a href="#skills" class="btn-secondary" style="padding: 0.65rem 1.25rem; font-size: 0.92rem;">
-                <span>⚡</span>
-                <span>Explore Skills</span>
-              </a>
+            <div class="glass-card stat-box">
+              <div class="stat-icon"><i class="fa-solid fa-hammer"></i></div>
+              <h3>Hands-On Practice</h3>
+              <p>Writing actual code for simple utilities and building real web pages instead of only reading theory.</p>
+            </div>
+            <div class="glass-card stat-box">
+              <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+              <h3>Excited for College Life</h3>
+              <p>Looking forward to participating in college clubs, making great friends, and taking on my first hackathons.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ======================================================================
-         SKILLS SECTION
-         ====================================================================== -->
-    <section class="section" id="skills">
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Core Competencies</span>
-          <h2 class="section-title">Technical & Soft <span class="gradient-text">Skills</span></h2>
-          <p class="section-desc">
-            Foundational programming languages, developer tools, and analytical capabilities I am honing during my 1st Year B.Tech program.
-          </p>
+          <span class="section-tag">02. Academics</span>
+          <h2 class="section-title">My Education</h2>
+          <p class="section-subtitle">Where I completed my schooling and where I am studying right now</p>
+        </div>
+
+        <div class="timeline">
+          <!-- B.Tech -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2025 – 2029 (Just Started)</span>
+                <span class="badge badge-ongoing">Currently Enrolled • 1st Year</span>
+              </div>
+              <h3 class="timeline-institution">[Your College / University Name]</h3>
+              <h4 class="timeline-degree">Bachelor of Technology (B.Tech) — Computer Science & Engineering</h4>
+              <p class="timeline-score"><strong>Current Semester:</strong> 1st Semester (Beginning of Academic Journey)</p>
+              <div class="timeline-details">
+                <p><strong>First-Year Subjects I am Studying:</strong></p>
+                <div class="chips-list">
+                  <span class="chip">Problem Solving & Programming in C</span>
+                  <span class="chip">Engineering Mathematics</span>
+                  <span class="chip">Basics of Electrical & Electronics</span>
+                  <span class="chip">Computer Programming Lab</span>
+                  <span class="chip">Engineering Physics / Chemistry</span>
+                  <span class="chip">Communication & Soft Skills</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class 12 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> Passed in 2025</span>
+                <span class="badge badge-success">Completed</span>
+              </div>
+              <h3 class="timeline-institution">[Your School Name / Junior College]</h3>
+              <h4 class="timeline-degree">Senior Secondary (Class XII) — Science Stream (PCM)</h4>
+              <p class="timeline-score"><strong>Status:</strong> Successfully completed with Physics, Chemistry, and Mathematics</p>
+              <div class="timeline-details">
+                <p>Built a solid mathematical foundation and developed an interest in engineering and computers.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class 10 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> Passed in 2023</span>
+                <span class="badge badge-success">Completed</span>
+              </div>
+              <h3 class="timeline-institution">[Your High School Name]</h3>
+              <h4 class="timeline-degree">Secondary School Certificate (Class X)</h4>
+              <p class="timeline-score"><strong>Status:</strong> Completed with good academic standing</p>
+              <div class="timeline-details">
+                <p>Participated in school science exhibitions, sports, and general knowledge quizzes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I'M LEARNING / SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03. My Skills</span>
+          <h2 class="section-title">What I Am Currently Learning</h2>
+          <p class="section-subtitle">Languages, concepts, and tools I am actively exploring as a 1st-year student</p>
         </div>
 
         <div class="skills-grid">
-          <!-- Programming Languages -->
-          <div class="glass-card skill-category-card">
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category-card">
             <div class="category-header">
-              <div class="category-icon">💻</div>
-              <h3 class="category-title">Programming</h3>
+              <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Programming Languages</h3>
             </div>
-            
-            <div class="skills-list">
-              <div class="skill-row">
+            <div class="skill-list">
+              <div class="skill-item">
                 <div class="skill-info">
-                  <span class="skill-name"><span>⚡</span> C Programming</span>
-                  <span class="skill-level-text">85%</span>
+                  <span>C Language (Syntax, Loops, Functions)</span>
+                  <span class="skill-percent">Learning</span>
                 </div>
-                <div class="skill-progress-bar">
-                  <div class="skill-progress-fill" style="width: 85%;"></div>
-                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
               </div>
-
-              <div class="skill-row">
+              <div class="skill-item">
                 <div class="skill-info">
-                  <span class="skill-name"><span>🚀</span> C++ (OOP & STL)</span>
-                  <span class="skill-level-text">80%</span>
+                  <span>HTML5 (Semantic Web Structure)</span>
+                  <span class="skill-percent">Practicing</span>
                 </div>
-                <div class="skill-progress-bar">
-                  <div class="skill-progress-fill" style="width: 80%;"></div>
-                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
               </div>
-
-              <div class="skill-row">
+              <div class="skill-item">
                 <div class="skill-info">
-                  <span class="skill-name"><span>🐍</span> Python (Basics)</span>
-                  <span class="skill-level-text">70%</span>
+                  <span>CSS3 (Styling, Colors, Flexbox)</span>
+                  <span class="skill-percent">Practicing</span>
                 </div>
-                <div class="skill-progress-bar">
-                  <div class="skill-progress-fill" style="width: 70%;"></div>
-                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 65%;"></div></div>
               </div>
-
-              <div class="skill-row">
+              <div class="skill-item">
                 <div class="skill-info">
-                  <span class="skill-name"><span>📜</span> JavaScript (ES6+)</span>
-                  <span class="skill-level-text">65%</span>
+                  <span>Python / JavaScript (Basics)</span>
+                  <span class="skill-percent">Exploring</span>
                 </div>
-                <div class="skill-progress-bar">
-                  <div class="skill-progress-fill" style="width: 65%;"></div>
-                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 45%;"></div></div>
               </div>
             </div>
           </div>
 
-          <!-- Web Development -->
-          <div class="glass-card skill-category-card">
+          <!-- Category 2: Core Concepts -->
+          <div class="skill-category-card">
             <div class="category-header">
-              <div class="category-icon">🌐</div>
-              <h3 class="category-title">Web Development</h3>
+              <div class="category-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3>Concepts I am Grasping</h3>
             </div>
-
-            <div class="skills-list">
-              <div class="skill-row">
-                <div class="skill-info">
-                  <span class="skill-name"><span>🟧</span> HTML5 & Semantic Web</span>
-                  <span class="skill-level-text">90%</span>
-                </div>
-                <div class="skill-progress-bar">
-                  <div class="skill-progress-fill" style="width: 90%;"></div>
-                </div>
-              </div>
-
-              <div class="skill-row">
-                <div class="skill-info">
-                  <span class="skill-name"><span>🎨</span> CSS3, Flexbox & Grid</span>
-                  <span class="skill-level-text">85%</span>
-                </div>
-                <div class="skill-progress-bar">
-                  <div class="skill-progress-fill" style="width: 85%;"></div>
-                </div>
-              </div>
-
-              <div class="skill-row">
-                <div class="skill-info">
-                  <span class="skill-name"><span>📱</span> Responsive Design</span>
-                  <span class="skill-level-text">85%</span>
-                </div>
-                <div class="skill-progress-bar">
-                  <div class="skill-progress-fill" style="width: 85%;"></div>
-                </div>
-              </div>
-
-              <div class="skill-row">
-                <div class="skill-info">
-                  <span class="skill-name"><span>✨</span> Glassmorphism & UI</span>
-                  <span class="skill-level-text">80%</span>
-                </div>
-                <div class="skill-progress-bar">
-                  <div class="skill-progress-fill" style="width: 80%;"></div>
-                </div>
-              </div>
+            <div class="skill-badges">
+              <span class="tech-badge highlight"><i class="fa-solid fa-check"></i> Basic Problem Solving</span>
+              <span class="tech-badge highlight"><i class="fa-solid fa-check"></i> Logic Building</span>
+              <span class="tech-badge highlight"><i class="fa-solid fa-check"></i> Flowcharts & Algorithms</span>
+              <span class="tech-badge"><i class="fa-solid fa-check"></i> Variables & Data Types</span>
+              <span class="tech-badge"><i class="fa-solid fa-check"></i> If-Else Conditional Logic</span>
+              <span class="tech-badge"><i class="fa-solid fa-check"></i> Loops (For, While)</span>
+              <span class="tech-badge"><i class="fa-solid fa-check"></i> Functions & Modularity</span>
             </div>
           </div>
 
-          <!-- Developer Tools & Mindset -->
-          <div class="glass-card skill-category-card">
+          <!-- Category 3: Developer Tools -->
+          <div class="skill-category-card">
             <div class="category-header">
-              <div class="category-icon">🛠️</div>
-              <h3 class="category-title">Tools & Soft Skills</h3>
+              <div class="category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <h3>Tools I Use</h3>
             </div>
-
-            <div class="chips-cloud" style="margin-bottom: 1.5rem;">
-              <span class="skill-tag">🐙 Git & GitHub</span>
-              <span class="skill-tag">📝 VS Code</span>
-              <span class="skill-tag">⌨️ Windows CLI</span>
-              <span class="skill-tag">🧩 Logic Building</span>
-              <span class="skill-tag">🎯 Strategic Planning</span>
-              <span class="skill-tag">🤝 Team Collaboration</span>
-              <span class="skill-tag">⏱️ Time Management</span>
-              <span class="skill-tag">🔍 Debugging</span>
+            <div class="skill-badges">
+              <span class="tech-badge"><i class="fa-solid fa-terminal"></i> VS Code Editor</span>
+              <span class="tech-badge"><i class="fa-brands fa-git-alt"></i> Git (Basic Commits)</span>
+              <span class="tech-badge"><i class="fa-brands fa-github"></i> GitHub (Repositories)</span>
+              <span class="tech-badge"><i class="fa-brands fa-windows"></i> Windows & Terminal</span>
+              <span class="tech-badge"><i class="fa-brands fa-chrome"></i> Chrome DevTools (Inspect)</span>
+              <span class="tech-badge"><i class="fa-solid fa-cloud-arrow-up"></i> Vercel Hosting</span>
             </div>
+          </div>
 
-            <div style="background: var(--bg-tertiary); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
-              <div style="font-weight: 700; font-size: 0.9rem; margin-bottom: 0.25rem; color: var(--accent-cyan);">
-                💡 Engineering Philosophy:
-              </div>
-              <p style="font-size: 0.82rem; color: var(--text-secondary);">
-                "Writing clean, scalable code is like mastering a strategic game — precise logic, patience, and clear foresight create winning solutions."
-              </p>
+          <!-- Category 4: Personal Strengths -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-lightbulb"></i></div>
+              <h3>Personal Strengths</h3>
+            </div>
+            <div class="skill-badges">
+              <span class="tech-badge highlight"><i class="fa-solid fa-star"></i> Eager to Learn</span>
+              <span class="tech-badge highlight"><i class="fa-solid fa-star"></i> Consistency</span>
+              <span class="tech-badge"><i class="fa-solid fa-star"></i> Patience in Debugging</span>
+              <span class="tech-badge"><i class="fa-solid fa-star"></i> Good Listener</span>
+              <span class="tech-badge"><i class="fa-solid fa-star"></i> Team Collaboration</span>
+              <span class="tech-badge"><i class="fa-solid fa-star"></i> Positive Attitude</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ======================================================================
-         HOBBIES & GAMING SECTION
-         ====================================================================== -->
-    <section class="section" id="hobbies">
+    <!-- 10 STARTER PROJECTS SECTION (GENUINE & BEGINNER-FRIENDLY) -->
+    <section class="section projects-section" id="projects">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Passions & Leisure</span>
-          <h2 class="section-title">My Hobbies & <span class="gradient-text">Gaming</span> 🎮</h2>
-          <p class="section-desc">
-            Games and creative pursuits sharpen the intellect. Discover how my passion for gaming, logic puzzles, and tech exploration fuels my engineering mindset.
-          </p>
+          <span class="section-tag">04. Hands-On Practice</span>
+          <h2 class="section-title">My 10 Starter Projects & Lab Exercises</h2>
+          <p class="section-subtitle">Real, beginner-level programs and web pages I created to learn programming step-by-step</p>
         </div>
 
-        <div class="hobbies-cards-grid">
-          <!-- Card 1: Strategy Video Games -->
-          <div class="glass-card hobby-featured-card">
-            <div class="hobby-card-top">
-              <div class="hobby-icon-box">🎮</div>
-              <span class="hobby-tag">Primary Passion</span>
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All 10 Starter Projects</button>
+          <button class="filter-btn" data-filter="c-lang">C Programs</button>
+          <button class="filter-btn" data-filter="web-basic">Web Pages</button>
+          <button class="filter-btn" data-filter="game-logic">Logic & Games</button>
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="projects-page-controls">
+          <span class="page-indicator" id="page-indicator">Showing Page 1 of 2 (Projects 1 to 5)</span>
+          <div class="page-buttons">
+            <button class="page-nav-btn active" id="btn-page-1" data-page="1">Page 1 (1–5)</button>
+            <button class="page-nav-btn" id="btn-page-2" data-page="2">Page 2 (6–10)</button>
+            <button class="page-nav-btn" id="btn-page-all" data-page="all">View All 10</button>
+          </div>
+        </div>
+
+        <!-- The 10 Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- PROJECT 1 -->
+          <div class="project-card page-1" data-category="web-basic" data-id="1">
+            <div class="project-preview">
+              <div class="project-mock-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mock-title">starter-01: my_first_portfolio.html</span>
+              </div>
+              <div class="mock-content">
+                <i class="fa-solid fa-laptop-code project-illustration-icon"></i>
+                <span class="mock-tag">Starter Project #1 • Web Basics</span>
+              </div>
             </div>
-            <h3 class="hobby-title">Strategy & Logic Video Games</h3>
-            <p class="hobby-text">
-              Engaging in tactical real-time strategy, competitive multiplayer, and puzzle games. Gaming hones split-second decision making, resource management, and team communication under pressure.
-            </p>
-            <div class="hobby-badges-row">
-              <span>⚡ Fast Reflexes</span>
-              <span>🛡️ Resource Tactics</span>
-              <span>🤝 Team Play</span>
+            <div class="project-body">
+              <div class="project-category">Web Development</div>
+              <h3 class="project-title">1. Personal Developer Portfolio Website</h3>
+              <p class="project-desc">
+                My very first complete website! Built using HTML5, CSS3, and JavaScript to introduce myself, showcase what I am learning, and share my contact details.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Responsive</span>
+              </div>
+              <div class="project-links">
+                <a href="#home" class="btn-link">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> You Are Here!
+                </a>
+                <button class="btn-link project-detail-btn" data-project="1">
+                  <i class="fa-solid fa-circle-info"></i> How I Built It
+                </button>
+              </div>
             </div>
           </div>
 
-          <!-- Card 2: Logic Puzzles & Brain Teasers -->
-          <div class="glass-card hobby-featured-card">
-            <div class="hobby-card-top">
-              <div class="hobby-icon-box">🧩</div>
-              <span class="hobby-tag">Analytical</span>
+          <!-- PROJECT 2 -->
+          <div class="project-card page-1" data-category="c-lang" data-id="2">
+            <div class="project-preview">
+              <div class="project-mock-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mock-title">starter-02: simple_calculator.c</span>
+              </div>
+              <div class="mock-content">
+                <i class="fa-solid fa-calculator project-illustration-icon"></i>
+                <span class="mock-tag">Starter Project #2 • C Language</span>
+              </div>
             </div>
-            <h3 class="hobby-title">Logic Puzzles & Brain Teasers</h3>
-            <p class="hobby-text">
-              Solving numerical brain teasers, Sudoku, pattern matching riddles, and algorithmic challenges that keep the analytical mind razor-sharp.
-            </p>
-            <div class="hobby-badges-row">
-              <span>🔍 Deductive Logic</span>
-              <span>🔢 Number Puzzles</span>
-              <span>🧠 Mental Agility</span>
-            </div>
-          </div>
-
-          <!-- Card 3: Exploring Tech & AI -->
-          <div class="glass-card hobby-featured-card">
-            <div class="hobby-card-top">
-              <div class="hobby-icon-box">🤖</div>
-              <span class="hobby-tag">Technology</span>
-            </div>
-            <h3 class="hobby-title">Exploring Tech, AI & Hardware</h3>
-            <p class="hobby-text">
-              Tracking the latest breakthroughs in artificial intelligence, computer architecture, open-source software, and next-gen developer tools.
-            </p>
-            <div class="hobby-badges-row">
-              <span>🚀 GenAI Trends</span>
-              <span>💻 PC Architecture</span>
-              <span>🌐 Open Source</span>
-            </div>
-          </div>
-
-          <!-- Card 4: Coding Challenges -->
-          <div class="glass-card hobby-featured-card">
-            <div class="hobby-card-top">
-              <div class="hobby-icon-box">💻</div>
-              <span class="hobby-tag">Coding</span>
-            </div>
-            <h3 class="hobby-title">Competitive Coding & Practice</h3>
-            <p class="hobby-text">
-              Experimenting with algorithms, optimizing time complexities, and solving data structures challenges to level up programming fluency.
-            </p>
-            <div class="hobby-badges-row">
-              <span>⚙️ Data Structures</span>
-              <span>⏱️ Time Complexity</span>
-              <span>💡 Algorithmic Thinking</span>
+            <div class="project-body">
+              <div class="project-category">C Console Program</div>
+              <h3 class="project-title">2. Simple Menu-Driven Calculator in C</h3>
+              <p class="project-desc">
+                A command-line calculator written in C that performs addition, subtraction, multiplication, and division using <code>switch-case</code> statements and user input.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C Language</span>
+                <span class="tag">Switch-Case</span>
+                <span class="tag">Functions</span>
+                <span class="tag">printf / scanf</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kshitij-agarwal/c-simple-calculator" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+                <button class="btn-link project-detail-btn" data-project="2">
+                  <i class="fa-solid fa-circle-info"></i> Program Details
+                </button>
+              </div>
             </div>
           </div>
 
-          <!-- Card 5: Music & Deep Work -->
-          <div class="glass-card hobby-featured-card">
-            <div class="hobby-card-top">
-              <div class="hobby-icon-box">🎧</div>
-              <span class="hobby-tag">Focus</span>
+          <!-- PROJECT 3 -->
+          <div class="project-card page-1" data-category="game-logic c-lang" data-id="3">
+            <div class="project-preview">
+              <div class="project-mock-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mock-title">starter-03: number_guessing_game.c</span>
+              </div>
+              <div class="mock-content">
+                <i class="fa-solid fa-dice project-illustration-icon"></i>
+                <span class="mock-tag">Starter Project #3 • Logic & Loops</span>
+              </div>
             </div>
-            <h3 class="hobby-title">Music & Deep Work Focus</h3>
-            <p class="hobby-text">
-              Listening to instrumental tracks, synthwave, and lo-fi beats while diving deep into code architectures, writing documentation, and studying.
-            </p>
-            <div class="hobby-badges-row">
-              <span>🎵 Lo-Fi Beats</span>
-              <span>🧘 Flow State</span>
-              <span>🎧 Focus Sessions</span>
+            <div class="project-body">
+              <div class="project-category">Mini Console Game</div>
+              <h3 class="project-title">3. Number Guessing Game</h3>
+              <p class="project-desc">
+                A fun interactive game where the computer picks a secret number from 1 to 100, and the player guesses it with "Higher" or "Lower" hints using a <code>while</code> loop.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C Language</span>
+                <span class="tag">Loops</span>
+                <span class="tag">Random Numbers</span>
+                <span class="tag">Logic</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kshitij-agarwal/c-number-guessing-game" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+                <button class="btn-link project-detail-btn" data-project="3">
+                  <i class="fa-solid fa-circle-info"></i> How It Works
+                </button>
+              </div>
             </div>
           </div>
 
-          <!-- Card 6: Building Web Experiments -->
-          <div class="glass-card hobby-featured-card">
-            <div class="hobby-card-top">
-              <div class="hobby-icon-box">✨</div>
-              <span class="hobby-tag">Creative</span>
+          <!-- PROJECT 4 -->
+          <div class="project-card page-1" data-category="c-lang" data-id="4">
+            <div class="project-preview">
+              <div class="project-mock-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mock-title">starter-04: student_marksheet.c</span>
+              </div>
+              <div class="mock-content">
+                <i class="fa-solid fa-graduation-cap project-illustration-icon"></i>
+                <span class="mock-tag">Starter Project #4 • C Lab Task</span>
+              </div>
             </div>
-            <h3 class="hobby-title">Building Creative Web Apps</h3>
-            <p class="hobby-text">
-              Crafting modern interactive web interfaces, experimenting with neon glassmorphism styles, and building projects for campus peers.
-            </p>
-            <div class="hobby-badges-row">
-              <span>🎨 UI/UX Design</span>
-              <span>⚡ Modern Web</span>
-              <span>🛠️ Side Projects</span>
+            <div class="project-body">
+              <div class="project-category">C Lab Exercise</div>
+              <h3 class="project-title">4. Student Marks & Grade Calculator</h3>
+              <p class="project-desc">
+                A basic lab exercise program that takes marks of 5 subjects, calculates total marks and percentage, and assigns grades (A, B, C, F) using <code>if-else</code> conditions.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C Language</span>
+                <span class="tag">If-Else</span>
+                <span class="tag">Arrays</span>
+                <span class="tag">Math</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kshitij-agarwal/c-student-marksheet" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+                <button class="btn-link project-detail-btn" data-project="4">
+                  <i class="fa-solid fa-circle-info"></i> Program Details
+                </button>
+              </div>
             </div>
           </div>
+
+          <!-- PROJECT 5 -->
+          <div class="project-card page-1" data-category="web-basic" data-id="5">
+            <div class="project-preview">
+              <div class="project-mock-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mock-title">starter-05: digital_bio_card.html</span>
+              </div>
+              <div class="mock-content">
+                <i class="fa-solid fa-id-card project-illustration-icon"></i>
+                <span class="mock-tag">Starter Project #5 • CSS Card</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">CSS Design Practice</div>
+              <h3 class="project-title">5. Digital Student Bio Card</h3>
+              <p class="project-desc">
+                A small, stylish profile card designed in pure HTML and CSS to learn CSS border-radius, shadows, flexbox centering, and hover animation effects.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS Flexbox</span>
+                <span class="tag">Hover Effects</span>
+                <span class="tag">UI Design</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kshitij-agarwal/html-css-profile-card" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+                <button class="btn-link project-detail-btn" data-project="5">
+                  <i class="fa-solid fa-circle-info"></i> How I Built It
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 6 -->
+          <div class="project-card page-2" data-category="c-lang" data-id="6">
+            <div class="project-preview">
+              <div class="project-mock-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mock-title">starter-06: temp_converter.c</span>
+              </div>
+              <div class="mock-content">
+                <i class="fa-solid fa-temperature-half project-illustration-icon"></i>
+                <span class="mock-tag">Starter Project #6 • C Formula</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Formula Application</div>
+              <h3 class="project-title">6. Temperature Unit Converter</h3>
+              <p class="project-desc">
+                Converts temperatures between Celsius, Fahrenheit, and Kelvin. Built to understand mathematical formulas and float data types in C programming.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C Language</span>
+                <span class="tag">Formulas</span>
+                <span class="tag">Data Types</span>
+                <span class="tag">Float Precision</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kshitij-agarwal/c-temperature-converter" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+                <button class="btn-link project-detail-btn" data-project="6">
+                  <i class="fa-solid fa-circle-info"></i> Program Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 7 -->
+          <div class="project-card page-2" data-category="game-logic c-lang" data-id="7">
+            <div class="project-preview">
+              <div class="project-mock-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mock-title">starter-07: prime_checker.c</span>
+              </div>
+              <div class="mock-content">
+                <i class="fa-solid fa-arrow-down-1-9 project-illustration-icon"></i>
+                <span class="mock-tag">Starter Project #7 • Math Logic</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">C Logic Exercise</div>
+              <h3 class="project-title">7. Prime Number & Even/Odd Checker</h3>
+              <p class="project-desc">
+                An algorithm practice program that checks whether a user-entered number is prime, composite, even, or odd using modulus operations and loop termination.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C Language</span>
+                <span class="tag">Logic</span>
+                <span class="tag">For Loops</span>
+                <span class="tag">Modulus %</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kshitij-agarwal/c-prime-checker" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+                <button class="btn-link project-detail-btn" data-project="7">
+                  <i class="fa-solid fa-circle-info"></i> How It Works
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 8 -->
+          <div class="project-card page-2" data-category="web-basic" data-id="8">
+            <div class="project-preview">
+              <div class="project-mock-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mock-title">starter-08: daily_todo_list.html</span>
+              </div>
+              <div class="mock-content">
+                <i class="fa-solid fa-list-check project-illustration-icon"></i>
+                <span class="mock-tag">Starter Project #8 • Web List</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Beginner Web App</div>
+              <h3 class="project-title">8. Daily Study Task Checklist</h3>
+              <p class="project-desc">
+                A simple web checklist where I can type college tasks, click "Add", and check them off when done. Built to learn basic JavaScript list creation and event listeners.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">DOM Events</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kshitij-agarwal/simple-todo-web" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+                <button class="btn-link project-detail-btn" data-project="8">
+                  <i class="fa-solid fa-circle-info"></i> How I Built It
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 9 -->
+          <div class="project-card page-2" data-category="game-logic web-basic" data-id="9">
+            <div class="project-preview">
+              <div class="project-mock-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mock-title">starter-09: computer_basics_quiz.html</span>
+              </div>
+              <div class="mock-content">
+                <i class="fa-solid fa-circle-question project-illustration-icon"></i>
+                <span class="mock-tag">Starter Project #9 • Mini Quiz</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Interactive Web Quiz</div>
+              <h3 class="project-title">9. Computer Fundamentals Quiz Page</h3>
+              <p class="project-desc">
+                A simple 5-question multiple-choice web quiz on computer basics (RAM, CPU, Operating Systems) that calculates the final score with a click.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML Forms</span>
+                <span class="tag">Radio Buttons</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Score Counter</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kshitij-agarwal/computer-basics-quiz" target="_blank" rel="noopener noreferrer" class="btn-link">
+                  <i class="fa-brands fa-github"></i> View Code
+                </a>
+                <button class="btn-link project-detail-btn" data-project="9">
+                  <i class="fa-solid fa-circle-info"></i> How It Works
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 10 -->
+          <div class="project-card page-2" data-category="web-basic" data-id="10">
+            <div class="project-preview">
+              <div class="project-mock-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="mock-title">starter-10: portfolio_ai_bot.js</span>
+              </div>
+              <div class="mock-content">
+                <i class="fa-solid fa-robot project-illustration-icon"></i>
+                <span class="mock-tag">Starter Project #10 • Bot Assistant</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Interactive Feature</div>
+              <h3 class="project-title">10. Portfolio AI Assistant Bot</h3>
+              <p class="project-desc">
+                A friendly floating chatbot integrated into this portfolio website to answer common questions about my learning journey, starter projects, and hobbies.
+              </p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Keyword Matching</span>
+                <span class="tag">DOM UI</span>
+                <span class="tag">Chat Widget</span>
+              </div>
+              <div class="project-links">
+                <button class="btn-link open-bot-trigger">
+                  <i class="fa-solid fa-comments"></i> Try Chatbot Now
+                </button>
+                <button class="btn-link project-detail-btn" data-project="10">
+                  <i class="fa-solid fa-circle-info"></i> How It Works
+                </button>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- ======================================================================
-         ACHIEVEMENTS SECTION (HIGHLIGHTED AS REQUESTED)
-         ====================================================================== -->
+    <!-- MILESTONES & GOALS SECTION (HONEST & INSPIRING) -->
     <section class="section achievements-section" id="achievements">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" style="background: rgba(245, 158, 11, 0.12); color: #fbbf24; border-color: rgba(245, 158, 11, 0.3);">
-            Recognitions & Milestones
-          </span>
-          <h2 class="section-title">My <span class="gold-gradient-text">Achievements</span> 🏆</h2>
-          <p class="section-desc">
-            A showcase of my academic milestones at JECRC University, gaming competitions, and technical certifications.
-          </p>
+          <span class="section-tag">05. Journey & Aspirations</span>
+          <h2 class="section-title">My Milestones & Goals</h2>
+          <p class="section-subtitle">Since I just joined college, here are my current steps and the goals I am working towards</p>
         </div>
 
-        <!-- Controls: Category Filter Tabs & Add Achievement Trigger -->
-        <div class="achievements-controls">
-          <div class="filter-tabs-group">
-            <button class="filter-tab-btn active" data-filter="all">All Highlights (6)</button>
-            <button class="filter-tab-btn" data-filter="academic">🎓 Academic</button>
-            <button class="filter-tab-btn" data-filter="gaming">🎮 Gaming & Competitions</button>
-            <button class="filter-tab-btn" data-filter="tech">💻 Coding & Tech</button>
+        <!-- Quick filter for Milestones vs Goals -->
+        <div class="achieve-filters">
+          <button class="achieve-filter-btn active" data-type="all">All Milestones & Goals</button>
+          <button class="achieve-filter-btn" data-type="milestone">🌱 Completed Steps</button>
+          <button class="achieve-filter-btn" data-type="goal">🎯 Upcoming 1st-Year Goals</button>
+        </div>
+
+        <div class="achieve-grid" id="achieve-grid">
+          <!-- Milestone 1 -->
+          <div class="achieve-card highlight-border" data-type="milestone">
+            <div class="achieve-icon-box trophy">
+              <i class="fa-solid fa-door-open"></i>
+            </div>
+            <div class="achieve-content">
+              <span class="achieve-issuer">Step 1: Stepped Into Engineering</span>
+              <h3 class="achieve-name">Enrolled in B.Tech Computer Science & Engineering</h3>
+              <p class="achieve-date">August 2025 • College Journey Began</p>
+              <p class="achieve-summary">
+                Successfully completed 12th standard science and secured admission into my dream branch of Computer Science & Engineering.
+              </p>
+              <span class="honor-tag">🌱 College Fresher</span>
+            </div>
           </div>
 
-          <!-- Add Achievement Button for Kshitij to add future achievements -->
-          <button class="btn-add-achievement" id="btn-open-add-achievement">
-            <span>➕</span>
-            <span>Add New Achievement</span>
-          </button>
-        </div>
+          <!-- Milestone 2 -->
+          <div class="achieve-card highlight-border" data-type="milestone">
+            <div class="achieve-icon-box trophy">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="achieve-content">
+              <span class="achieve-issuer">Step 2: Built My First Website</span>
+              <h3 class="achieve-name">Designed & Launched This Portfolio Website</h3>
+              <p class="achieve-date">2026 • Web Development Milestone</p>
+              <p class="achieve-summary">
+                Learned HTML5 and CSS3 to build and deploy my personal website on the internet so that professors and friends can view my work.
+              </p>
+              <span class="honor-tag">🚀 1st Web Project</span>
+            </div>
+          </div>
 
-        <!-- Achievements Grid rendered dynamically via JS -->
-        <div class="achievements-grid" id="achievements-grid">
-          <!-- Populated by JavaScript -->
+          <!-- Milestone 3 -->
+          <div class="achieve-card highlight-border" data-type="milestone">
+            <div class="achieve-icon-box trophy">
+              <i class="fa-solid fa-terminal"></i>
+            </div>
+            <div class="achieve-content">
+              <span class="achieve-issuer">Step 3: Started Programming</span>
+              <h3 class="achieve-name">Wrote My First C Programs & Logic Exercises</h3>
+              <p class="achieve-date">First Semester</p>
+              <p class="achieve-summary">
+                Understood variables, loops, conditional statements, and successfully built 10 simple console and web starter exercises.
+              </p>
+              <span class="honor-tag">💻 Code Beginner</span>
+            </div>
+          </div>
+
+          <!-- Goal 1 -->
+          <div class="achieve-card" data-type="goal">
+            <div class="achieve-icon-box">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <div class="achieve-content">
+              <span class="achieve-issuer">Upcoming Goal 1</span>
+              <h3 class="achieve-name">Master Basic Data Structures in C</h3>
+              <p class="achieve-date">Target: Semester 2</p>
+              <p class="achieve-summary">
+                My next big milestone is to thoroughly understand Arrays, Strings, Pointers, and Linked Lists to build strong fundamentals.
+              </p>
+              <span class="honor-tag">🎯 Learning Target</span>
+            </div>
+          </div>
+
+          <!-- Goal 2 -->
+          <div class="achieve-card" data-type="goal">
+            <div class="achieve-icon-box">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="achieve-content">
+              <span class="achieve-issuer">Upcoming Goal 2</span>
+              <h3 class="achieve-name">Join College Coding Club & Enter My First Hackathon</h3>
+              <p class="achieve-date">Target: 2026 Academic Year</p>
+              <p class="achieve-summary">
+                Collaborate with peers, attend student tech meetups, and experience my very first 24-hour hackathon as a beginner.
+              </p>
+              <span class="honor-tag">🎯 College Life</span>
+            </div>
+          </div>
+
+          <!-- Goal 3 -->
+          <div class="achieve-card" data-type="goal">
+            <div class="achieve-icon-box">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="achieve-content">
+              <span class="achieve-issuer">Upcoming Goal 3</span>
+              <h3 class="achieve-name">Complete My First Online Certification (CS50 / FreeCodeCamp)</h3>
+              <p class="achieve-date">Target: Summer 2026</p>
+              <p class="achieve-summary">
+                Complete a verified foundation course in Computer Science or Responsive Web Design to gain formal credentials.
+              </p>
+              <span class="honor-tag">🎯 Certification Goal</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ======================================================================
-         CONTACT SECTION
-         ====================================================================== -->
-    <section class="section" id="contact">
+    <!-- HOBBIES & INTERESTS SECTION -->
+    <section class="section hobbies-section" id="hobbies">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Get In Touch</span>
-          <h2 class="section-title">Let's <span class="gradient-text">Connect</span> 📬</h2>
-          <p class="section-desc">
-            Have an opportunity, college project collaboration, or want to discuss technology & gaming? Feel free to reach out!
-          </p>
+          <span class="section-tag">06. Free Time</span>
+          <h2 class="section-title">My Hobbies & Interests</h2>
+          <p class="section-subtitle">What I enjoy doing when I am not attending college lectures or writing code</p>
         </div>
 
-        <div class="contact-grid">
-          <!-- Left Info Panel -->
-          <div class="glass-card contact-info-panel">
-            <div>
-              <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem;">
-                Contact Kshitij Agarwal
-              </h3>
-              <p style="color: var(--text-secondary); font-size: 0.95rem;">
-                I am always eager to connect with fellow students, developers, mentors, and tech enthusiasts.
+        <div class="hobbies-grid">
+          <!-- Hobby 1 -->
+          <div class="hobby-card">
+            <div class="hobby-icon-wrapper">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <h3>Casual Gaming</h3>
+            <p>
+              I enjoy playing strategy, puzzle, and multiplayer PC/mobile games with friends. It helps me relax, recharge, and think quickly under pressure.
+            </p>
+            <div class="hobby-meta">
+              <span class="hobby-badge"><i class="fa-solid fa-gamepad"></i> Strategy Games</span>
+              <span class="hobby-badge">Teamwork</span>
+            </div>
+          </div>
+
+          <!-- Hobby 2 -->
+          <div class="hobby-card">
+            <div class="hobby-icon-wrapper">
+              <i class="fa-solid fa-tv"></i>
+            </div>
+            <h3>Watching Tech YouTube Channels</h3>
+            <p>
+              I love watching videos about new smartphone tech, computer hardware builds, future artificial intelligence, and coding tutorials.
+            </p>
+            <div class="hobby-meta">
+              <span class="hobby-badge"><i class="fa-brands fa-youtube"></i> Tech Videos</span>
+              <span class="hobby-badge">Gadgets</span>
+            </div>
+          </div>
+
+          <!-- Hobby 3 -->
+          <div class="hobby-card">
+            <div class="hobby-icon-wrapper">
+              <i class="fa-solid fa-baseball-bat-ball"></i>
+            </div>
+            <h3>Cricket & Outdoor Sports</h3>
+            <p>
+              Playing cricket and badminton on the campus grounds keeps me active, healthy, and gives me a great break from staring at screens.
+            </p>
+            <div class="hobby-meta">
+              <span class="hobby-badge"><i class="fa-solid fa-heart-pulse"></i> Fitness</span>
+              <span class="hobby-badge">Cricket</span>
+            </div>
+          </div>
+
+          <!-- Hobby 4 -->
+          <div class="hobby-card">
+            <div class="hobby-icon-wrapper">
+              <i class="fa-solid fa-headphones"></i>
+            </div>
+            <h3>Listening to Music</h3>
+            <p>
+              Music is my best study companion. I listen to lo-fi beats and acoustic tracks while solving math assignments or practicing code.
+            </p>
+            <div class="hobby-meta">
+              <span class="hobby-badge"><i class="fa-solid fa-music"></i> Focus Music</span>
+              <span class="hobby-badge">Relaxation</span>
+            </div>
+          </div>
+
+          <!-- Hobby 5 -->
+          <div class="hobby-card">
+            <div class="hobby-icon-wrapper">
+              <i class="fa-solid fa-chess"></i>
+            </div>
+            <h3>Chess & Puzzles</h3>
+            <p>
+              Playing casual chess matches helps me think two steps ahead and practice patience — which also helps a lot while debugging code!
+            </p>
+            <div class="hobby-meta">
+              <span class="hobby-badge"><i class="fa-solid fa-brain"></i> Logic</span>
+              <span class="hobby-badge">Mind Games</span>
+            </div>
+          </div>
+
+          <!-- Hobby 6 -->
+          <div class="hobby-card">
+            <div class="hobby-icon-wrapper">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3>Making Friends in College</h3>
+            <p>
+              Exploring the college campus, hanging out with batchmates at the canteen, and discussing our classes and dreams for the future.
+            </p>
+            <div class="hobby-meta">
+              <span class="hobby-badge"><i class="fa-solid fa-smile"></i> College Life</span>
+              <span class="hobby-badge">New Friendships</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">07. Say Hello</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Feel free to reach out, give feedback on my website, or just say hi!</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Left Column: Contact Cards -->
+          <div class="contact-info-col">
+            <div class="contact-card">
+              <h3 class="contact-info-title">Let's connect!</h3>
+              <p class="contact-info-desc">
+                Since I am a first-year student, I would love any advice from senior students, professors, or developers. If you have tips on what I should learn next, please send me a message!
               </p>
 
-              <div class="contact-direct-cards">
-                <!-- Email Channel -->
-                <div class="contact-channel-item">
-                  <div class="channel-left">
-                    <div class="channel-icon">✉️</div>
-                    <div>
-                      <div class="channel-label">Email Address</div>
-                      <div class="channel-value">kshitij.agarwal.jecrc@gmail.com</div>
-                    </div>
-                  </div>
-                  <button class="copy-btn btn-copy-text" data-copy="kshitij.agarwal.jecrc@gmail.com" title="Copy Email">
-                    Copy
-                  </button>
-                </div>
-
-                <!-- University Location -->
-                <div class="contact-channel-item">
-                  <div class="channel-left">
-                    <div class="channel-icon">🏛️</div>
-                    <div>
-                      <div class="channel-label">University Campus</div>
-                      <div class="channel-value">JECRC University, Jaipur (Raj.)</div>
-                    </div>
+              <div class="contact-details">
+                <div class="contact-detail-item">
+                  <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div>
+                    <span class="detail-label">Email</span>
+                    <a href="mailto:kshitij.agarwal.student@example.com" class="detail-value">kshitij.agarwal.student@example.com</a>
                   </div>
                 </div>
 
-                <!-- Date of Birth & Personal Reference -->
-                <div class="contact-channel-item">
-                  <div class="channel-left">
-                    <div class="channel-icon">🎂</div>
-                    <div>
-                      <div class="channel-label">Birth Date</div>
-                      <div class="channel-value">17th February 2008</div>
-                    </div>
+                <div class="contact-detail-item">
+                  <div class="detail-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                  <div>
+                    <span class="detail-label">LinkedIn</span>
+                    <a href="https://linkedin.com/in/kshitij-agarwal" target="_blank" rel="noopener noreferrer" class="detail-value">linkedin.com/in/kshitij-agarwal</a>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="detail-icon"><i class="fa-brands fa-github"></i></div>
+                  <div>
+                    <span class="detail-label">GitHub</span>
+                    <a href="https://github.com/kshitij-agarwal" target="_blank" rel="noopener noreferrer" class="detail-value">github.com/kshitij-agarwal</a>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div>
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">College Campus, India</span>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Social Links in Contact -->
-            <div>
-              <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem; text-transform: uppercase; font-weight: 600;">
-                Find Me On The Web
-              </div>
-              <div style="display: flex; gap: 0.75rem;">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
-                  <span>🐙</span>
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
-                  <span>💼</span>
-                </a>
-                <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LeetCode">
-                  <span>⚡</span>
-                </a>
-                <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Discord">
-                  <span>💬</span>
-                </a>
+              <!-- Quick Status Box -->
+              <div class="availability-box">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <strong>Currently Open To:</strong>
+                  <p>Study Groups • Coding Advice • Learning Recommendations from Seniors</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Right Interactive Contact Form -->
-          <div class="glass-card contact-form-card">
-            <form id="contact-form">
-              <div class="form-group">
-                <label for="contact-name" class="form-label">Your Name</label>
-                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+          <!-- Right Column: Interactive Form -->
+          <div class="contact-form-col">
+            <form class="contact-form" id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" placeholder="e.g. Ramesh Kumar" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="e.g. ramesh@example.com" required />
+                </div>
               </div>
 
               <div class="form-group">
-                <label for="contact-email" class="form-label">Your Email</label>
-                <input type="email" id="contact-email" class="form-control" placeholder="e.g. rahul@example.com" required>
+                <label for="subject">Subject <span class="required">*</span></label>
+                <input type="text" id="subject" name="subject" placeholder="Feedback / Advice / Say Hi" required />
               </div>
 
               <div class="form-group">
-                <label for="contact-message" class="form-label">Your Message</label>
-                <textarea id="contact-message" class="form-control" placeholder="Write your message here... Let's collaborate or connect!" required></textarea>
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Hi Kshitij, congratulations on entering college! Here is my advice on programming..." required></textarea>
               </div>
 
-              <button type="submit" class="btn-submit-message">
-                <span>🚀</span>
-                <span>Send Message to Kshitij</span>
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <i class="fa-solid fa-paper-plane btn-icon"></i>
               </button>
+
+              <div class="form-feedback" id="form-feedback"></div>
             </form>
           </div>
         </div>
@@ -729,183 +1140,100 @@
     </section>
   </main>
 
-  <!-- ========================================================================
-       FOOTER
-       ======================================================================== -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
+    <div class="container footer-container">
+      <div class="footer-top">
         <div class="footer-brand">
-          <div class="brand-logo">
-            <div class="logo-badge">KA</div>
-            <div class="brand-name">Kshitij Agarwal</div>
-          </div>
-          <p class="footer-tagline">
-            B.Tech 1st Year (Semester 1) Student @ JECRC University • Problem Solver & Aspiring Engineer.
-          </p>
+          <a href="#home" class="logo">
+            <span class="logo-code">&lt;</span>Kshitij<span class="logo-accent">.Agarwal</span><span class="logo-code">/&gt;</span>
+          </a>
+          <p class="footer-tagline">1st Year B.Tech Computer Science Undergrad • Passionate Learner & Builder.</p>
         </div>
 
-        <div class="footer-nav">
-          <a href="#home">Home</a>
+        <div class="footer-nav-links">
           <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#hobbies">Hobbies & Gaming</a>
-          <a href="#achievements">Achievements</a>
+          <a href="#education">Education</a>
+          <a href="#skills">What I'm Learning</a>
+          <a href="#projects">10 Starter Projects</a>
+          <a href="#achievements">Milestones</a>
+          <a href="#hobbies">Hobbies</a>
           <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social-links">
+          <a href="https://github.com/kshitij-agarwal" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/kshitij-agarwal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:kshitij.agarwal.student@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
 
+      <div class="footer-divider"></div>
+
       <div class="footer-bottom">
-        <div>
-          © 2026 Kshitij Agarwal. Built with passion, modern web standards, and tactical precision.
-        </div>
-        <a href="#home" class="back-to-top-btn">
-          <span>Back to top</span>
-          <span>↑</span>
-        </a>
+        <p>&copy; 2026 Kshitij Agarwal. Built with HTML, CSS, and JavaScript.</p>
+        <p class="footer-note">B.Tech CSE Class of 2029 • Just Entered College</p>
       </div>
     </div>
   </footer>
 
-  <!-- ========================================================================
-       MODAL 1: RESUME / CV PREVIEW MODAL
-       ======================================================================== -->
-  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <div class="modal-title">
-          <span>📄</span>
-          <span>Resume Preview - Kshitij Agarwal</span>
+  <!-- FLOATING CHATBOT WIDGET -->
+  <div class="chatbot-wrapper">
+    <button id="chatbot-toggle-btn" class="chatbot-toggle-btn" aria-label="Open AI Assistant" title="Chat with Kshitij's AI Assistant">
+      <i class="fa-solid fa-robot chatbot-icon-open"></i>
+      <i class="fa-solid fa-xmark chatbot-icon-close"></i>
+      <span class="chatbot-badge">AI</span>
+    </button>
+
+    <div id="chatbot-window" class="chatbot-window">
+      <div class="chatbot-header">
+        <div class="chatbot-title-group">
+          <div class="bot-avatar"><i class="fa-solid fa-robot"></i></div>
+          <div>
+            <h4>Kshitij's Student Bot</h4>
+            <span class="bot-status"><span class="pulse-dot"></span> Online</span>
+          </div>
         </div>
-        <button class="modal-close-btn" id="btn-close-resume-modal" aria-label="Close modal">✕</button>
+        <button id="close-chatbot-btn" class="close-bot-btn">&times;</button>
       </div>
 
-      <div class="modal-body">
-        <div class="resume-sheet">
-          <div class="resume-header">
-            <h2 class="resume-name">KSHITIJ AGARWAL</h2>
-            <div class="resume-contact-line">
-              <span>🎂 DOB: 17/02/2008</span>
-              <span>📍 Jaipur, India</span>
-              <span>✉️ kshitij.agarwal.jecrc@gmail.com</span>
-            </div>
-            <div style="margin-top: 0.35rem; font-weight: 600; color: #0284c7; font-size: 0.9rem;">
-              B.Tech Computer Science Engineering • 1st Year (Semester 1) • JECRC University
-            </div>
-          </div>
-
-          <!-- Education -->
-          <div class="resume-section-title">Education</div>
-          <div class="resume-item">
-            <div class="resume-item-header">
-              <span>JECRC University, Jaipur</span>
-              <span>2026 - 2030</span>
-            </div>
-            <div class="resume-item-sub">
-              <span>Bachelor of Technology (B.Tech) in Computer Science & Engineering</span>
-              <span>Semester 1</span>
-            </div>
-            <ul class="resume-bullet-list">
-              <li>Coursework: Programming for Problem Solving (C/C++), Calculus, Discrete Structures.</li>
-              <li>Active member of university technical innovation and coding clubs.</li>
-            </ul>
-          </div>
-
-          <!-- Technical Skills -->
-          <div class="resume-section-title">Technical Skills</div>
-          <div style="font-size: 0.88rem; color: #334155; line-height: 1.6;">
-            <strong>Languages:</strong> C, C++, Python (Foundations), JavaScript<br>
-            <strong>Web Tech:</strong> HTML5, CSS3, Flexbox/Grid, Responsive Web Design<br>
-            <strong>Developer Tools:</strong> Git, GitHub, VS Code, Command Line Interface<br>
-            <strong>Core Strengths:</strong> Tactical Planning, Algorithmic Thinking, Analytical Reasoning
-          </div>
-
-          <!-- Achievements -->
-          <div class="resume-section-title">Selected Achievements & Honors</div>
-          <ul class="resume-bullet-list">
-            <li>Secured admission in B.Tech CSE at JECRC University based on academic merit.</li>
-            <li>Finalist in Campus Logic & Gaming Tournament.</li>
-            <li>High school board academic distinction in Mathematics & Computer Applications.</li>
-            <li>Developed and published full-featured personal portfolio website with interactive modules.</li>
-          </ul>
-
-          <!-- Hobbies -->
-          <div class="resume-section-title">Interests & Hobbies</div>
-          <div style="font-size: 0.88rem; color: #334155;">
-            Competitive Strategy Gaming, Logic Puzzles & Sudoku, Exploring Tech Breakthroughs & AI.
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="chat-message bot">
+          <p>👋 Hi! I am Kshitij's portfolio helper. Kshitij has just entered college as a 1st year B.Tech student. What would you like to know?</p>
+          <div class="chat-quick-actions">
+            <button class="quick-chip" data-query="projects">10 Starter Projects</button>
+            <button class="quick-chip" data-query="skills">What is he learning?</button>
+            <button class="quick-chip" data-query="milestones">Milestones & Goals</button>
+            <button class="quick-chip" data-query="hobbies">Hobbies</button>
+            <button class="quick-chip" data-query="contact">Contact Details</button>
           </div>
         </div>
+      </div>
 
-        <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 1.5rem;">
-          <button class="btn-primary" id="btn-print-resume">
-            <span>🖨️</span>
-            <span>Print / Save as PDF</span>
-          </button>
-        </div>
+      <form class="chatbot-input-row" id="chatbot-form">
+        <input type="text" id="chatbot-input" placeholder="Ask about Kshitij's college journey, starter code..." autocomplete="off" />
+        <button type="submit" aria-label="Send message"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- MODAL FOR DETAILED PROJECT POPUP -->
+  <div class="project-modal" id="project-modal">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <button class="close-modal-btn" id="close-modal-btn">&times;</button>
+      <div class="modal-body" id="modal-content">
+        <!-- Injected dynamically via JS -->
       </div>
     </div>
   </div>
 
-  <!-- ========================================================================
-       MODAL 2: ADD NEW ACHIEVEMENT MODAL
-       ======================================================================== -->
-  <div class="modal-overlay" id="add-achievement-modal" role="dialog" aria-modal="true">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <div class="modal-title">
-          <span>➕</span>
-          <span>Add New Achievement</span>
-        </div>
-        <button class="modal-close-btn" id="btn-close-add-modal" aria-label="Close modal">✕</button>
-      </div>
-
-      <div class="modal-body">
-        <form id="add-achievement-form">
-          <div class="form-group">
-            <label for="new-achieve-title" class="form-label">Achievement Title *</label>
-            <input type="text" id="new-achieve-title" class="form-control" placeholder="e.g. 1st Place in College Hackathon" required>
-          </div>
-
-          <div class="form-group">
-            <label for="new-achieve-category" class="form-label">Category *</label>
-            <select id="new-achieve-category" class="form-control" style="background: var(--bg-tertiary); color: var(--text-primary);" required>
-              <option value="academic">🎓 Academic Milestone</option>
-              <option value="gaming">🎮 Gaming & Competitions</option>
-              <option value="tech">💻 Coding & Tech</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="new-achieve-date" class="form-label">Date or Year</label>
-            <input type="text" id="new-achieve-date" class="form-control" placeholder="e.g. October 2026">
-          </div>
-
-          <div class="form-group">
-            <label for="new-achieve-org" class="form-label">Organization / Event</label>
-            <input type="text" id="new-achieve-org" class="form-control" placeholder="e.g. JECRC University">
-          </div>
-
-          <div class="form-group">
-            <label for="new-achieve-desc" class="form-label">Description *</label>
-            <textarea id="new-achieve-desc" class="form-control" placeholder="Describe your accomplishment..." required></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="new-achieve-tags" class="form-label">Tags (comma separated)</label>
-            <input type="text" id="new-achieve-tags" class="form-control" placeholder="e.g. Hackathon, Coding, JECRC">
-          </div>
-
-          <button type="submit" class="btn-gold" style="width: 100%; justify-content: center;">
-            <span>💾</span>
-            <span>Save Achievement to Portfolio</span>
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!-- Main JavaScript File -->
-  <script src="js/main.js"></script>
-  https://viber.botpress.cloud/w/wkspace_01M2Q1TJZBGP4D6BGJNDNA4R5N/agent/0d6fe58e-4ca2-4b9e-9cf9-96a3ca82b6fe
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
